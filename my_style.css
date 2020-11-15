@@ -1,0 +1,57 @@
+body {
+    background-image:url('fondecran.gif');
+     /* Set a specific height */
+  height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    
+}
+
+#preseninscrip
+{
+	text-align: center;
+}
+
+.divform
+{
+	font-size: 12px;
+	font-family:cursive;
+	  display: block;
+    margin-left: auto;
+    margin-right: auto;
+   height:300px;
+   width:500px;
+   font-size: 12px;
+   background-color: blue;
+   border-radius: 5px;
+   background: linear-gradient(transparent,blue,darkblue);
+   text-align: center;
+
+}
+.fielpre
+{
+	width: 500px;
+	height: 100px;
+}
+
+label
+{
+	text-align: left;
+	width:150px;
+}
+
+.nom,.mail
+{
+	border-style: dotted;
+	border-width: 2px;
+	border-color: blue;
+}
+
+.valid
+{text-align: left;
+	box-shadow: 5px 6px 0px black;
+}

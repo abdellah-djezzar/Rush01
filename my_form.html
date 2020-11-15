@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Inscription</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+	<link rel="stylesheet" type="text/css" href="my_style.css">
+	
+</head>
+<body>
+
+
+<h3 id="preseninscrip">Inscription</h3>
+<form method="POST" action="my_form.html" id="form">
+			<div class="divform">
+					
+						<fieldset class="fieldpre">
+							<legend>Présentation</legend>
+								<div class="divsexe">
+										<p id=sexe><i class="fas fa-venus-mars">Sexe:</i>
+										<label for="femme">Homme</label>
+										<input type="radio" name="sexe" id="homme"/>
+										<label for="femme">Femme</label>
+										<input type="radio" name="sexe" id="femme"/>
+										<label for="autre">Autre</label>
+										<input type="radio" name="sexe" id="autre"/>
+										</p>
+								</div>
+								<div class="divcivilite">
+									<label for="civil"><i class="fas fa-address-card">Civilité:</i></label>
+										<select name="civil" id="civil">
+											<option value="m">M.</option>
+											<option value="mme">Mme</option>
+										</select>
+								</div>						
+								<div class="divnom">
+									<label for="nom"><i class="fas fa-user">Nom/Prénom</i></label>									
+										<input type="text" name="nom" id="nom" placeholder="Djezzar Abdellah" class="nom" size="50"/>
+								</div >	
+								<div class="divdate">
+									<label for="datenaiss"><i class="fas fa-birthday-cake">Date de naissance:</i></label>
+									<input type="date" name="datenaiss" id="datenaiss"  />
+								</div>
+								<div class="divhobbies">
+									<p id="hobbies"><i class="fas fa-gamepad">Hobbies:</i>	
+										<label for="jeux">Jeux vidéo</label>	
+										<input type="checkbox" name="hobbies" id="jeux"/>
+										<label for="cinema">Cinéma</label>			
+										<input type="checkbox" name="hobbies" id="cinema"/>	
+										<label for="lecture">Lecture</label>		
+										<input type="checkbox" name="hobbies" id="lecture"/>
+										<label for="infor">Informatique</label>			
+										<input type="checkbox" name="hobbies" id="infor"/>
+									</p>
+								</div>
+						</fieldset>
+						
+						<fieldset class="fieldcoor">
+							<legend>Coordonnées</legend>
+							<div class="divemail" >
+								
+								<label for="email"><i class="far fa-address-book">Email</i></label>
+								<input type="email" name="inscrip_email" id="email" placeholder="example@example.com" class="mail"	size="50" />
+							</div>	
+
+							<div class="divtel">
+								<label for="phone"><i class="fas fa-phone">Votre numéro de téléphone:</i></label>
+								<input type="tel" name="phone" id="phone" placeholder="06 48 16 34 98"  size="30"/>
+							</div>
+
+							<div class="divsite">
+								<label for="site"><i class="fas fa-at">Website:</i></label>
+								<input type="url" name="site" id="site" placeholder="https://site.com" size="50"/>
+							</div>
+							<div class="divtoken">
+								<input type="hidden" name="token" id="token" value="my_first_website"/>
+							</div >
+
+							<div class="divvalid">
+								<label for="valid">Validation:</label>
+								<input type="submit" name="valid" id="valid" value="Valider" class="valid" />
+							</div>
+						</fieldset>
+					
+				</div>
+</form>
+<script src="my_script.js"> </script>	
+</body>
+</html>
